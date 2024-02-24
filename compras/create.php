@@ -515,7 +515,7 @@ include ('../app/controllers/compras/listado_de_compras.php');
 
                                    <div class="col-md-12">
                                        <div class="form-group">
-                                           <button class="btn btn-primary btn-block" id="btn_guardar_compra">Guardar compra</button>
+                                           <button class="btn btn-primary btn-block" id="btn_guardar_compra"><i class="fa fa-save"></i> Guardar compra</button>
                                        </div>
                                    </div>
                                    <script>

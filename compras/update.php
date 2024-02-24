@@ -512,7 +512,7 @@ include ('../app/controllers/compras/cargar_compra.php');
 
                                     <div class="col-md-12">
                                         <div class="form-group">
-                                            <button class="btn btn-success btn-block" id="btn_actualizar_compra">Actualizar compra</button>
+                                            <button class="btn btn-success btn-block" id="btn_actualizar_compra"><i class="fa fa-pencil-alt"></i> Actualizar compra</button>
                                         </div>
                                     </div>
                                     <script>
