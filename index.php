@@ -8,6 +8,8 @@ include ('app/controllers/roles/listado_de_roles.php');
 include ('app/controllers/categorias/listado_de_categoria.php');
 include ('app/controllers/almacen/listado_de_productos.php');
 include ('app/controllers/proveedores/listado_de_proveedores.php');
+include ('app/controllers/compras/listado_de_compras.php');
+
 ?>
 
 <!-- Content Wrapper. Contains page content -->
@@ -157,7 +159,51 @@ include ('app/controllers/proveedores/listado_de_proveedores.php');
                     </div>
                 </div>
 
+                <div class="col-lg-3 col-6">
+                    <div class="small-box bg-danger">
+                        <div class="inner">
+                            <?php
+                            $contador_de_compras = 0;
+                            foreach ($compras_datos as $compras_dato){
+                                $contador_de_compras = $contador_de_compras + 1;
+                            }
+                            ?>
+                            <h3><?php echo $contador_de_compras;?></h3>
+                            <p>Compras Registradas</p>
+                        </div>
+                        <a href="<?php echo $URL;?>/compras/create.php">
+                            <div class="icon">
+                                <i class="fas fa-cart-plus"></i>
+                            </div>
+                        </a>
+                        <a href="<?php echo $URL;?>/compras" class="small-box-footer">
+                            Más detalle <i class="fas fa-arrow-circle-right"></i>
+                        </a>
+                    </div>
+                </div>
 
+                <div class="col-lg-3 col-6">
+                    <div class="small-box bg-warning">
+                        <div class="inner">
+                            <?php
+                            $contador_de_compras = 0;
+                            foreach ($compras_datos as $compras_dato){
+                                $contador_de_compras = $contador_de_compras + 1;
+                            }
+                            ?>
+                            <h3><?php echo $contador_de_compras;?></h3>
+                            <p>Ventas Registradas</p>
+                        </div>
+                        <a href="<?php echo $URL;?>/compras/create.php">
+                            <div class="icon">
+                            <i class="nav-icon fas fa-shopping-basket"></i>
+                            </div>
+                        </a>
+                        <a href="<?php echo $URL;?>/compras" class="small-box-footer">
+                            Más detalle <i class="fas fa-arrow-circle-right"></i>
+                        </a>
+                    </div>
+                </div>
 
             </div>
 
